@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: currency-conversion
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: rahuldeshpande
+Implementation-Vendor-Id: com.rahulografy.springdemo
+Build-Jdk: 1.8.0_172
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/currency-conversion
+Created-By: Maven Integration for Eclipse
+
