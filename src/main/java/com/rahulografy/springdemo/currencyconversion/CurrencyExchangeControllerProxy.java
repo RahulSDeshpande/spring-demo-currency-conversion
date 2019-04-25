@@ -8,10 +8,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.rahulografy.springdemo.currencyconversion.bean.ConversionValue;
 
 // @FeignClient(name = "service-exchange-conversion", url = "localhost:8000")
-@FeignClient(name = "service-exchange-conversion")
-@RibbonClient(name = "service-exchange-conversion")
+// @FeignClient(name = "service-currency-exchange")
+@FeignClient(name = "netflix-zuul-api-gateway-server")
+@RibbonClient(name = "service-currency-exchange")
 public interface CurrencyExchangeControllerProxy {
 
-	@GetMapping("/currency-exchange/from/{from}/to/{to}")
+	// @GetMapping("/currency-exchange/from/{from}/to/{to}")
+	@GetMapping("/service-currency-exchange/currency-exchange/from/{from}/to/{to}")
 	public ConversionValue getExchangeValue(@PathVariable String from, @PathVariable String to);
 }
